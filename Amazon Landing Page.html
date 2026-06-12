@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+   
+        }
+        .box-1{
+            width:30%;
+            height:600px;
+            background-color: rgb(0, 0, 0);
+            padding: 20px;   
+            margin: 0px; 
+            position: absolute;
+            z-index: auto;
+            background: linear-gradient(to right, rgb(2, 2, 3),rgb(2, 2, 3,0.9), rgba(3, 3, 3, 0.8), rgba(3, 3, 3, 0.7), rgba(3, 3, 3, 0.7), rgba(3, 3, 3, 0.6), rgba(3, 3, 3, 0.5), rgba(3, 3, 3, 0.4), rgba(3, 3, 3, 0.3), rgba(3, 3, 3, 0.2), rgba(2, 2, 2, 0.1));
+            
+        }
+
+        .box-2{
+            width:30%;
+            height:600px;
+            background-color: rgb(0, 0, 0);
+            padding: 20px;   
+            margin: 0px; 
+            position: absolute;
+            z-index: auto;
+            background: linear-gradient(to right, rgb(2, 2, 3),rgb(2, 2, 3,0.9), rgba(3, 3, 3, 0.8), rgba(3, 3, 3, 0.7), rgba(3, 3, 3, 0.7), rgba(3, 3, 3, 0.6), rgba(3, 3, 3, 0.5), rgba(3, 3, 3, 0.4), rgba(3, 3, 3, 0.3), rgba(3, 3, 3, 0.2), rgba(2, 2, 2, 0.1));
+            
+        }
+
+        button{
+    background-color:#ffffff;
+    color:rgb(4, 4, 4);
+    border:none;
+    border-radius:5px;
+
+    width:300px;
+    height:50px;
+
+    font-size:20px;
+    font-weight:bold;
+    margin-top:-10px;
+    margin-bottom:0px;
+
+    cursor:pointer;
+}
+
+button.small{
+    background-color:#ffffff;
+    color:rgb(4, 4, 4);
+    border:none;
+    border-radius:5px;
+
+    width:130px;
+    height:50px;
+
+    font-size:20px;
+    font-weight:bold;
+    margin-top:-10px;
+    margin-bottom:0px;
+
+    cursor:pointer;
+}
+h1{
+    font-size:50px;
+    margin-bottom:20px;
+    margin-top:0px;
+}
+
+p{
+    font-size:18px;
+    line-height:1.4;
+    margin-top:-30px;
+}
+
+p.description{
+    font-size:18px;
+    line-height:1.4;
+    margin-top:0px;
+    margin-left:50px;
+}
+
+.hero{
+    
+    height: 600px;
+
+    background-image: url("https://m.media-amazon.com/images/G/31/AmazonVideo/2019/MLP.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+.hero-2{
+    
+    height: 600px;
+
+    background-image: url("https://m.media-amazon.com/images/G/31/AmazonVideo/2021/X-site/MLP/TVOD/TVOD_MLP_Right.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+    position: relative;
+}
+
+.hero-3{
+    margin-top: 100px;
+    position: relative;
+}
+
+.subscriptions{
+    display:flex;
+    min-height:700px;
+
+    padding:50px;
+}
+
+.subscriptions-text{
+    flex:1;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.subscriptions-grid{
+    flex:1;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap:15px;
+}
+
+.card{
+    height:150px;
+}
+        
+        
+    </style>
+</head>
+<body>
+    <section class="hero" style="margin-left: 20px;">
+    <div class="box-1">
+     <h1>Welcome to Prime Video</h1><br><br>
+            <p>Watch the latest movies, TV shows and award-winning Amazon Originals.</p><br><br>
+            
+      
+    
+    <button style="font-size: 18px;">Join Prime Lite at Rs.799/year</button><br><br>
+    <p class="description">Effectively at Rs.10/month </p><br><br>
+    <button>Join Prime at Rs.1499/year</button><br><br>
+    <p class="description">Effectively at Rs.125/month </p><br><br>
+    <button style="font-size: 16px;">Join Prime Monthly at Rs.299/month</button><br><br>
+    <button style="font-size: 16px;">Compare All Plans</button><br><br> 
+    </div>
+</section>
+
+
+<section class="hero-2">
+<div class="box-2">
+     <h1>Movie rentals on prime</h1><br><br>
+            <p>Early Access to new movies, before digital subscription</p><br><br>
+            <button class="small">Rent Now</button>
+            </div><br><br>
+    
+        </section>
+
+
+<section class="subscriptions">
+
+    <div class="subscriptions-text">
+        <h1>Your favorite subscriptions all in one place</h1>
+
+        <p>
+            Customers can subscribe to get access to a variety
+            of premium and specialty content, easily accessible
+            within the Prime Video app
+        </p>
+    </div>
+
+    <div class="subscriptions-grid">
+
+        <div class="card">Apple TV+</div>
+        <div class="card">MovieSphere</div>
+        <div class="card">Lionsgate</div>
+
+        <div class="card">Goldmines</div>
+        <div class="card">Anime Times</div>
+        <div class="card">ManoramaMAX</div>
+
+        <div class="card">Chaupal</div>
+        <div class="card">BBC Player</div>
+        <div class="card">League Pass</div>
+
+    </div>
+
+</section>    
+
+
+
+   
+        
+    
+</body>
+</html>
